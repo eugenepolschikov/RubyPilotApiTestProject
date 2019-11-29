@@ -1,23 +1,30 @@
-Given(/^I launch http:\/\/www.codoid.com$/) do
-  pending
+Given(/^I launch http:\/\/www\.codoid\.com$/) do
+  @LoginPage = LoginPage.new(@browser)
+  @LoginPage.visit
 end
 
 And(/^I click on Login tab$/) do
-  pending
+  @LoginPage.clickLoginTab
 end
 
 And(/^I enter username$/) do
-  pending
+  @LoginPage.enterUsername("xxxxxxx")
 end
 
 And(/^I enter password$/) do
-  pending
+  @LoginPage.enterPassword("yyyyyyy")
 end
 
 When(/^I click Login button$/) do
-  pending
+  @LoginPage.clickLoginButton
 end
 
 Then(/^I see Home page$/) do
-  pending
+  @LoginPage.verifyHomePageHeader
+end
+
+
+Given(/^I launch http:\/\/codoid\.com$/) do
+  @LoginPage = LoginPage.new(@browser)
+  @LoginPage.visit
 end

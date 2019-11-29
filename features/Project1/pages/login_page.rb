@@ -30,6 +30,6 @@ class LoginPage
   end
 
   def verifyHomePageHeader()
-    @browser.element(:text => "Dashboard").wait_until_present
+    @browser.element(:text => "Dashboard").wait_until(interval: 0.5, &:present?)
   end
 end
