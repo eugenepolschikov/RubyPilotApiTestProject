@@ -1,10 +1,7 @@
-#  RUBY, CUCUMBER API tests 
+# RubyPilotApiTestProject
 For api tests purposes
 
-## launch tests with the command
-
->  cucumber -p verbose
-  
-After the execution , the HTML will be generated in
-project folder 'RubyPilotApiTestProject', named
-Report.html 
+### Run sample with the following command:
+``
+cucumber -p verbose
+``
