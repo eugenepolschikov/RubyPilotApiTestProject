@@ -1,1 +1,2 @@
 default: --format html --out=Report.html
+verbose: cucumber_api_verbose=true
