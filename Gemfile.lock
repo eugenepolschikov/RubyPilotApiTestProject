@@ -25,9 +25,13 @@ GEM
     gherkin3 (3.1.2)
     google-protobuf (3.8.0-x64-mingw32)
     headless (0.2.2)
-    json (2.2.0)
+    httparty (0.13.7)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
+    json (1.8.6)
     multi_json (1.14.1)
     multi_test (0.1.2)
+    multi_xml (0.6.0)
     regexp_parser (1.6.0)
     rspec (3.9.0)
       rspec-core (~> 3.9.0)
@@ -62,7 +66,8 @@ DEPENDENCIES
   ffi
   gherkin
   headless (= 0.2.2)
-  json
+  httparty (~> 0.13.7)
+  json (~> 1.8)
   rspec
   selenium-webdriver
   syntax

@@ -17,6 +17,8 @@ gem "watir", "~> 6.0"
 gem 'selenium-webdriver'
 gem 'headless', '0.2.2'
 gem 'titleize'
-gem 'json'
+gem 'json', '~> 1.8'
 gem 'gherkin'
 gem 'syntax'
+#api
+gem 'httparty', '~> 0.13.7'
