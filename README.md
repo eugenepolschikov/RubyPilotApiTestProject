@@ -1,7 +1,7 @@
 # RubyPilotApiTestProject
 For api tests purposes
 
-### Run sample with the following command:
+### Run feature with the following command:
 ``
 cucumber -p verbose
 ``
