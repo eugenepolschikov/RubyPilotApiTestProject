@@ -17,5 +17,8 @@ Feature: Test API validation
       "password_confirmation": "Test@12345"
     }
     """
-    When I send a POST request to "http://3.134.115.62/api/v1/sign_up"
+#    When I send a POST request to "http://3.134.115.62/api/v1/sign_up"
+
+    #When I send customized POST request to "http://3.134.115.62/api/v1/sign_up"
+    When I send customized POST request to "/api/v1/sign_up"
     Then the response status should be "422"
