@@ -1,2 +1,3 @@
-default: --format html --out=Report.html
-verbose: cucumber_api_verbose=true
+#default: --format PrettyFace::Formatter::Html --out index.html
+default: --format html --out=MyReport.html
+verbose: cucumber_api_verbose=true --format html --out=MyReport.html
