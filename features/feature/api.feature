@@ -13,8 +13,11 @@ Feature: API validation
     And I set key "password" with value "Test@12345" to body
     And I set key "password_confirmation" with value "Test@12345" to body
     When I send POST request to endpoint "sign_up"
-    Then the response status should be "200"
+#    Then the response status should be "200"
+#    Then the JSON response should have key "data"
+#    And the JSON response should have key "token"
     And I grab "$..data.token" as "response_user_token" globally
+    And I grab "$" as "response" globally DUMP RESPONSE
 
   Scenario: Verify [User SignIn] request
     Given I send and accept JSON

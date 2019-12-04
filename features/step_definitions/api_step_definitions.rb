@@ -101,4 +101,15 @@ When "I grab {string} as {string} globally" do |k, v|
 
   k = "$.#{k}" unless k[0] == '$'
   $memory = { v => @response.get(k) }
+  end
+
+#@TODO re-work that in order to post response in HTML report
+When "I grab {string} as {string} globally DUMP RESPONSE" do |k, v|
+  if @response.nil?
+    raise 'No response found.'
+  end
+
+  k = "$.#{k}" unless k[0] == '$'
+  $memory = { v => @response.get(k) }
+  puts @response
 end
